@@ -8,7 +8,7 @@ bool checkPrime(uint64_t value) {
     return false;
   for (int k = 2; k * k <= value; k++){
     if (value % k == 0)
-      retur false;
+      return false;
   }
   return true;
 }
@@ -40,7 +40,7 @@ uint64_t sumPrime(uint64_t hbound) {
   hbound = hbound - 1;
   while (hbound > 0) {
     if (checkPrime(hbound)) {
-      summf = summa + hbound;
+      summa = summa + hbound;
     }
     --hbound;
   }
